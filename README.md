@@ -1,7 +1,5 @@
 # football_Injuries_BMI
 
-# 1. 프로젝트 개요
-
 # 목표
 Research Question: Does a football player’s BMI affect the rate of injury occurrence?
 Objective: To analyze data in order to identify any correlation between BMI and injury frequency, and to determine which BMI categories are associated with higher injury risks. This information could be valuable for team fitness management and for improving player training programs.
