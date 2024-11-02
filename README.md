@@ -7,6 +7,6 @@
 # 기술 스택
 - Framework: Django
 - Data Source: API-Sports (Football)
-- - API-Sports data includes player physical information, injury history, and team information. We plan to use the /players and /injuries endpoints to calculate BMI and collect injury data.
+  - API-Sports data includes player physical information, injury history, and team information. We plan to use the /players and /injuries endpoints to calculate BMI and collect injury data.
 - IDE: Visual Studio Code
 - FrontEnd Design Tool: Figma
