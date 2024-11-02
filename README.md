@@ -1,4 +1,4 @@
-# football_Injuries_BMI
+# Football_Injuries_BMI (ENG)
 
 # Goal
 - Research Question: Does a football player’s BMI affect the rate of injury occurrence?
@@ -12,7 +12,7 @@
 - IDE: Visual Studio Code
 - FrontEnd Design Tool: Figma
 
-# 축구 선수 부상과 BMI의 연관관계
+# 축구 부상과 BMI의 연관관계 (KR)
 
 # 목표
 - 연구 질문: 축구 선수의 BMI가 부상 발생률에 영향을 미치는가?
