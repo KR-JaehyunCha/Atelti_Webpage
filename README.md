@@ -36,9 +36,9 @@
 
 - **Player Physical Information**: Includes height, weight, and other physical characteristics required for calculating Body Mass Index (BMI). This data will help us categorize players based on their BMI levels and analyze potential injury risk correlations.
 
-- **Injury History**: Contains details about each player's injury occurrences, such as the type of injury, date of occurrence, and recovery time. We will use this data to track injury frequency and patterns across different BMI categories, aiming to identify which groups are more prone to injuries.
+- **Injury History** (TO BE ADDED...): Contains details about each player's injury occurrences, such as the type of injury, date of occurrence, and recovery time. We will use this data to track injury frequency and patterns across different BMI categories, aiming to identify which groups are more prone to injuries.
 
-- **Team Information**: Additional context about the player's team (such as training intensity, match schedules) which may indirectly influence injury rates. This will be included in the analysis to control for external factors that may impact injury occurrences.
+- **Team Information** (TO BE ADDED...): Additional context about the player's team (such as training intensity, match schedules) which may indirectly influence injury rates. This will be included in the analysis to control for external factors that may impact injury occurrences.
 
 ## 📐 Methodology
 
@@ -65,10 +65,7 @@
 
 ## 👥 Contributors
 
-- **Your Name** - Project Lead
-- **Collaborator 1** - Data Analysis
-- **Collaborator 2** - Frontend Development
-- **Collaborator 3** - Backend Development
+- **Name** - Jae Hyun Cha
 
 ---
 
@@ -109,9 +106,9 @@
 
 - **선수 신체 정보**: 키, 몸무게 등 BMI 계산에 필요한 신체 정보를 포함합니다. 이 데이터를 통해 선수들을 BMI 수준별로 분류하고, 부상 위험과의 상관관계를 분석합니다.
 
-- **부상 이력**: 선수의 부상 발생 내역으로 부상 종류, 발생 날짜, 회복 기간 등의 정보를 포함합니다. 이 데이터를 활용하여 각 BMI 카테고리의 부상 빈도와 패턴을 분석하여 어느 그룹이 부상에 더 취약한지 파악합니다.
+- **부상 이력** (추가 예정...): 선수의 부상 발생 내역으로 부상 종류, 발생 날짜, 회복 기간 등의 정보를 포함합니다. 이 데이터를 활용하여 각 BMI 카테고리의 부상 빈도와 패턴을 분석하여 어느 그룹이 부상에 더 취약한지 파악합니다.
 
-- **팀 정보**: 선수의 팀에 대한 추가 정보(예: 훈련 강도, 경기 일정)로, 이는 부상 발생률에 영향을 미칠 수 있는 외부 요인으로 분석에 포함됩니다.
+- **팀 정보** (추가 예정...): 선수의 팀에 대한 추가 정보(예: 훈련 강도, 경기 일정)로, 이는 부상 발생률에 영향을 미칠 수 있는 외부 요인으로 분석에 포함됩니다.
 
 ## 📐 분석 방법
 
@@ -138,10 +135,7 @@
 
 ## 👥 기여자
 
-- **Your Name** - 프로젝트 리드
-- **협력자 1** - 데이터 분석
-- **협력자 2** - 프론트엔드 개발
-- **협력자 3** - 백엔드 개발
+- **이름** - 차재현
 
 ---
 
