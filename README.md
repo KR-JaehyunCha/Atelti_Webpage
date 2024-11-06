@@ -30,6 +30,7 @@
   - Using `/players` and `/injuries` endpoints to calculate BMI and gather injury data.
 - **IDE**: Visual Studio Code
 - **Frontend Design Tool**: Figma
+- **Support Tool**: ChatGPT (Assistance with project development and documentation)
 
 ## 📊 Data Description
 
@@ -102,6 +103,7 @@
   - `/players`와 `/injuries` 엔드포인트를 사용하여 BMI를 계산하고 부상 데이터를 수집할 예정입니다.
 - **IDE**: Visual Studio Code
 - **프론트엔드 디자인 도구**: Figma
+- - **지원 도구**: ChatGPT (프로젝트 개발 및 문서화 지원)
 
 ## 📊 데이터 설명
 
