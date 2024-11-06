@@ -67,6 +67,13 @@
 
 - **Name** - Jae Hyun Cha
 
+## 📬 Contact
+
+For questions about the project or collaboration opportunities, feel free to reach out.
+
+- **LinkedIn**: https://www.linkedin.com/in/jae-hyun-cha-1825a12b9/
+- **Gmail**: j4cha@ucsd.edu
+
 ---
 
 
@@ -136,6 +143,13 @@
 ## 👥 기여자
 
 - **이름** - 차재현
+
+## 📬 연락처
+
+프로젝트에 대해 문의 사항이 있거나 협업을 원하시면 아래로 연락해 주세요.
+
+- **LinkedIn**: https://www.linkedin.com/in/jae-hyun-cha-1825a12b9/
+- **Gmail**: j4cha@ucsd.edu
 
 ---
 
