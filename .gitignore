@@ -1,0 +1,24 @@
+# Python 파일
+*.pyc
+__pycache__/
+
+# 가상 환경
+venv/
+env/
+
+# 에디터 관련 파일
+.vscode/
+.idea/
+
+# Django 관련
+*.sqlite3
+*.log
+/static/
+media/
+
+# 환경 변수 파일
+*.env
+
+# 운영 체제 관련 파일
+.DS_Store
+Thumbs.db
