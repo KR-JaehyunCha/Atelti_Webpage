@@ -19,6 +19,8 @@ from django.urls import path
 from my_app import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', views.index, name='index'),  # 기본 URL로 index 뷰 연결
+    path('admin/', admin.site.urls),                 # Django 관리자 페이지
+    path('', views.index, name='home'),              # Home 페이지
+    path('players/', views.players, name='players'), # Players 페이지
+    path('schedule/', views.schedule, name='schedule'), # Match Schedule 페이지
 ]

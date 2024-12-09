@@ -1,0 +1,77 @@
+/* 페이지 배경 */
+body {
+    background-color: #f8f9fa; /* 부드러운 회색 배경 */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 헤더 스타일 */
+header {
+    background-color: #dc3545; /* 아틀레티코 마드리드의 빨간색 */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+}
+
+/* 카드 스타일 */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.05); /* 호버 시 약간 확대 */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 카드 이미지 스타일 */
+.card-img-top {
+    width: 100%;                /* 가로는 항상 100% */
+    height: 500px;              /* 고정된 높이 설정 */
+    object-fit: cover;          /* 비율을 유지하며 자르기 */
+    object-position: center;    /* 이미지의 중앙 부분을 보여줌 */
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* 카드 제목 */
+.card-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #dc3545; /* 아틀레티코 마드리드 색상 */
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* 카드 텍스트 */
+.card-text {
+    font-size: 1em;
+    color: #555;
+    text-align: center;
+    margin: 5px 0;
+}
+
+/* 푸터 스타일 */
+footer {
+    background-color: #343a40; /* 어두운 회색 */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
