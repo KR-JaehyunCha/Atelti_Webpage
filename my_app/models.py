@@ -10,3 +10,12 @@ class Player(models.Model):
 
     def __str__(self):
         return self.name
+    
+class Match(models.Model):
+    date = models.DateField()
+    opponent = models.CharField(max_length=100)
+    home_away = models.CharField(max_length=10, choices=[('Home', 'Home'), ('Away', 'Away')])
+    result = models.CharField(max_length=50, blank=True, null=True)
+
+    def __str__(self):
+        return f"{self.date} - {self.opponent} ({self.home_away})"

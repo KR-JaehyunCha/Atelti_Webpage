@@ -23,4 +23,6 @@ urlpatterns = [
     path('', views.index, name='home'),              # Home 페이지
     path('players/', views.players, name='players'), # Players 페이지
     path('schedule/', views.schedule, name='schedule'), # Match Schedule 페이지
+    path('schedule/add/', views.schedule, name='add_match'), # 경기 일정 추가 페이지
+    path('schedule/api/', views.schedule, name='match_api'), # 경기 일정 API 처리
 ]
