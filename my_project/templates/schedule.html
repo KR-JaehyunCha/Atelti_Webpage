@@ -33,44 +33,45 @@
         </div>
     </nav>
 
-    <!-- Content -->
-    <div class="container text-center mt-5">
-        <h1>Schedule</h1>
-        {% regroup matches by date|date:"F Y" as month_matches %}
-        <div class="accordion mt-4" id="matchAccordion">
-            {% for month in month_matches %}
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="heading{{ forloop.counter }}">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ forloop.counter }}" aria-expanded="true" aria-controls="collapse{{ forloop.counter }}">
-                        {{ month.grouper }}
-                    </button>
-                </h2>
-                <div id="collapse{{ forloop.counter }}" class="accordion-collapse collapse {% if forloop.first %}show{% endif %}" aria-labelledby="heading{{ forloop.counter }}">
-                    <div class="accordion-body">
-                        <table class="table table-striped">
-                            <thead class="table-danger">
-                                <tr>
-                                    <th>Date</th>
-                                    <th>Opponent</th>
-                                    <th>Home/Away</th>
-                                    <th>Result</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {% for match in month.list %}
-                                <tr>
-                                    <td>{{ match.date }}</td>
-                                    <td>{{ match.opponent }}</td>
-                                    <td>{{ match.home_away }}</td>
-                                    <td>{{ match.result|default:"-" }}</td>
-                                </tr>
-                                {% endfor %}
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
+    <!-- Schedule Header -->
+    <div class="schedule-header text-center mb-4">
+        <h1>Match Schedule</h1>
+        <p>Stay updated with Atlético Madrid's match fixtures and results.</p>
+    </div>
+
+    <!-- Match Schedule Table -->
+    <div class="container">
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle">
+                <thead class="table-danger text-center">
+                    <tr>
+                        <th>Date</th>
+                        <th>Opponent</th>
+                        <th>Home/Away</th>
+                        <th>League</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% if matches %}
+                        {% for match in matches %}
+                        <tr class="text-center">
+                            <td>{{ match.date }}</td>
+                            <td>{{ match.opponent }}</td>
+                            <td>{{ match.home_away }}</td>
+                            <td>
+                                <img src="{{ match.league_logo }}" alt="{{ match.league }}" class="league-logo me-2">
+                            </td>
+                            <td>{{ match.result }}</td>
+                        </tr>
+                        {% endfor %}
+                    {% else %}
+                        <tr>
+                            <td colspan="5" class="text-center">No match schedules available at this time.</td>
+                        </tr>
+                    {% endif %}
+                </tbody>
+            </table>
         </div>
     </div>
 

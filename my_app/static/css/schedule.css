@@ -1,80 +1,40 @@
-/* 페이지 배경 및 기본 설정 */
-body {
-    background-color: #f8f9fa;
-    font-family: 'Arial', sans-serif;
-}
-
-/* 제목 스타일 */
-h1 {
-    font-size: 2.5rem;
-    color: #dc3545; /* Atlético Madrid 색상 */
-    margin-bottom: 1rem;
-    font-weight: bold;
-}
-
-/* 테이블 스타일 */
-.table {
-    margin: 0 auto;
-    width: 90%;
-    border-collapse: collapse;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.table thead {
-    background-color: #dc3545;
+/* Header 스타일 */
+.schedule-header {
+    background: linear-gradient(to right, #c31432, #240b36);
     color: white;
-    font-weight: bold;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
-.table thead th {
-    padding: 12px;
-    text-align: center;
-}
-
-.table tbody td {
-    padding: 10px;
-    text-align: center;
+/* Match Card 스타일 */
+.match-card {
     border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    background-color: #fff;
+    padding: 20px;
 }
 
-.table-striped tbody tr:nth-of-type(odd) {
-    background-color: #f9f9f9;
+.match-card:hover {
+    transform: scale(1.05);
 }
 
-.table-striped tbody tr:nth-of-type(even) {
-    background-color: #ffffff;
+/* 리그 로고 스타일 */
+.league-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
-/* 테이블 호버 효과 */
-.table tbody tr:hover {
-    background-color: #f1f1f1;
-    transition: background-color 0.2s ease-in-out;
-}
-
-/* 반응형 디자인 */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2rem;
-    }
-
-    .table {
-        font-size: 0.9rem;
-    }
-}
-
-/* Accordion 스타일 */
-.accordion-button {
-    background-color: #dc3545;
-    color: white;
+/* Match Result 스타일 */
+.match-result {
+    font-size: 1.2rem;
     font-weight: bold;
+    text-align: center;
+    color: #333;
 }
 
-.accordion-button:not(.collapsed) {
-    background-color: #b02a37;
-    color: white;
-}
-
-.accordion-body {
-    padding: 1rem;
-    background-color: #f8f9fa;
-}
