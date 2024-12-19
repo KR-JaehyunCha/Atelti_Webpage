@@ -47,6 +47,7 @@ def players(request):
     # 선수 데이터 가공
     players = [
         {
+            "id": player["player"]["id"],
             "name": player["player"]["name"],
             "position": player["statistics"][0]["games"]["position"],
             "nationality": player["player"]["nationality"],
@@ -111,3 +112,33 @@ def chatbot(request):
         return JsonResponse({'response': bot_response})
 
     return JsonResponse({'response': 'Invalid request method.'}, status=405)
+
+def player_detail(request, player_id):
+    endpoint = f"https://v3.football.api-sports.io/players"
+    params = {
+        "id": player_id,
+        "season": 2021
+    }
+
+    data = fetch_api_data(endpoint, params, HEADERS)
+
+    if "error" in data:
+        return JsonResponse({"error": data["error"]}, status=400)
+
+    if not data["response"]:
+        return JsonResponse({"error": "No data found for the player."}, status=404)
+
+    player = data["response"][0]["player"]
+    statistics = data["response"][0]["statistics"][0]
+
+    player_detail = {
+        "name": player["name"],
+        "position": statistics["games"]["position"],
+        "nationality": player["nationality"],
+        "birth_date": player["birth"]["date"],
+        "image_url": player["photo"],
+        "goals": statistics["goals"]["total"],
+        "assists": statistics["goals"]["assists"]
+    }
+
+    return JsonResponse(player_detail)
