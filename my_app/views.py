@@ -3,6 +3,7 @@ from django.http import JsonResponse
 from openai import OpenAI
 import os
 import json
+import joblib
 import logging
 from dotenv import load_dotenv
 from .utils import fetch_api_data
@@ -142,3 +143,21 @@ def player_detail(request, player_id):
     }
 
     return JsonResponse(player_detail)
+
+# 모델 로드
+model_path = os.path.join(os.path.dirname(__file__), 'match_predictor.pkl')
+model = joblib.load(model_path)
+
+def predict_match(request):
+    if request.method == 'POST':
+        data = json.loads(request.body)
+        home_score = data.get('home_score', 0)
+        away_score = data.get('away_score', 0)
+
+        # 예측 (피처 이름 없이 데이터만 전달)
+        prediction = model.predict([[home_score, away_score]])
+        result = ['Home Win', 'Draw', 'Away Win'][prediction[0]]
+
+        return JsonResponse({'prediction': result})
+
+    return JsonResponse({'error': 'Invalid request'}, status=400)

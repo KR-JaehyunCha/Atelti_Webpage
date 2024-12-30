@@ -27,4 +27,5 @@ urlpatterns = [
     path('schedule/api/', views.schedule, name='match_api'), # 경기 일정 API 처리
     path('chatbot/', views.chatbot, name='chatbot'),
     path('player/<int:player_id>/', views.player_detail, name='player_detail'),
+    path('predict', views.predict_match, name='predict_match'),
 ]
